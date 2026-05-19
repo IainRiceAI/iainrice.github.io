@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@astrojs/check": "latest",
-    "@astrojs/sitemap": "latest"
+    "@astrojs/sitemap": "latest",
     "astro": "latest"
   },
   "devDependencies": {}
