@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+const { title = 'Professor Iain Rice | Industrial AI', description = 'Professor of Industrial AI, executive AI leader and research collaborator.' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="/">Iain Rice<span>.</span></a>
+        <div class="nav-links">
+          <a href="/industry/">Industry</a>
+          <a href="/research/">Research</a>
+          <a href="/leadership/">Leadership</a>
+          <a href="/contact/">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer class="footer">
+      <div class="container">
+        <strong>Professor Iain Rice</strong><br />
+        Industrial AI · GenAI · AI Governance · Healthcare · FinTech · Public Safety · Education
+      </div>
+    </footer>
+  </body>
+</html>
